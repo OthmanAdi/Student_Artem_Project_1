@@ -1,0 +1,251 @@
+/**My Style Libraries**/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+
+/*Responsiveness*/
+@media screen and (min-width: 40em) {
+    .col-group {
+        overflow: hidden;
+    }
+
+    .col-group > div {
+        float: left;
+        width: 30%;
+    }
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/*details of Body Layout*/
+.wrap {
+    max-width: 760px;
+    margin: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+section {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    padding-top: 60px;
+    border-bottom: 1px dotted #d63384;
+}
+
+header {
+    position: fixed;
+    background-color: #9a9da2;
+    width: 100%;
+    overflow: hidden;
+    height: 80px;
+}
+
+header #logo {
+    font-size: 40px;
+    color: whitesmoke;
+    padding: 5px;
+    padding-left: 10px;
+    float: left;
+}
+
+@-webkit-keyframes Jump {
+    from {
+        -webkit-transform: translate(0, 0px);
+    }
+    50% {
+        -webkit-transform: translate(0, 10px);
+    }
+    to {
+        -webkit-transform: translate(0, 0px);
+    }
+}
+
+header #logo:hover {
+    -webkit-animation: Jump;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+}
+
+header ul {
+    display: inline;
+    float: right;
+    padding: 5px;
+}
+
+header ul li {
+    display: inline;
+    color: white;
+    text-decoration: none;
+}
+
+header ul li {
+    /*Official Method*/
+    transition: all 500ms ease;
+    /*Support*/
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+}
+
+header ul li:hover {
+    /*Official Method*/
+    transition: all 500ms ease;
+    /*Support*/
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+}
+
+.ul-Header {
+    word-spacing: 20px;
+}
+
+section .images {
+    text-align: center;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+}
+
+.images img {
+    width: 40%;
+    padding: 5%;
+}
+
+#skills {
+    clear: both;
+    min-height: 500px;
+    text-align: left;
+    margin-left: -40px;
+}
+
+#skills li {
+    font-size: 80px;
+    padding: 20px;
+    list-style: none;
+    color: #d63384;
+    text-align: center;
+}
+
+#skills li:hover {
+    color: #0d6efd;
+    cursor: cell;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+}
+
+h1 {
+    font-weight: 200;
+}
+
+h2 {
+    font-weight: 200;
+    width: auto;
+}
+
+h3 {
+    font-weight: 200;
+}
+
+p {
+    font-weight: 200;
+}
+
+/*Section Hello*/
+#hello {
+    padding-top: 100px;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0.3);
+    border-bottom: 0px dotted #20c997;
+}
+
+#hello p {
+    width: 50%;
+}
+
+/*Section About me */
+#about-me ul {
+    text-align: center;
+    margin-left: 10px;
+}
+
+#about-me ul li {
+    font-size: 50px;
+    list-style: none;
+    display: inline;
+    color: #c7dbd2;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+}
+
+#about-me ul li:hover {
+
+    color: #98c8b2;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+}
+
+#CenterThis {
+    padding-left: 30%;
+}
+
+/*Section Work*/
+#images {
+    display: block;
+}
+
+/*Styling my Footer*/
+.footer {
+    background-color: #9a9da2;
+    color: white;
+    text-align: center;
+    width: auto;
+    height: 10em;
+}
+
+@-webkit-keyframes Jump {
+    from {
+        -webkit-transform: translate(0, 0px);
+    }
+    50% {
+        -webkit-transform: translate(0, 10px);
+    }
+    to {
+        -webkit-transform: translate(0, 0px);
+    }
+}
+
+.footer .FooterLogo {
+    width: 15px;
+    height: 20px;
+    float: right;
+}
+
+.footer .AncorinFooter {
+    font-size: 20px;
+    color: white;
+    padding-left: 5px;
+    margin: auto;
+    float: left;
+    text-decoration: none;
+    -webkit-animation: Jump;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+}

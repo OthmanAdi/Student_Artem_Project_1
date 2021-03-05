@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--    Importing my Bootstrap Css Framework-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
+          integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA=="
+          crossorigin="anonymous"/>
+    <!--    Linking my Custom made Styling-Sheet-->
+    <link rel="stylesheet" href="Homepage.css">
+<!--    Importing AJAX Library for the Smooth Scroll EFFECT-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>    <title>Artem homepage</title>
+</head>
+<body>
+<!--Website Header-->
+<header>
+    <div class="wrap">
+        <a href="#hello" id="logo"> LOGO
+        </a>
+        <ul class="ul-Header">
+            <a href="#work">
+                <li>work</li>
+            </a>
+            <a href="#about-me">
+                <li>AboutMe</li>
+            </a>
+            <a href="#skills">
+                <li>skills</li>
+            </a>
+        </ul>
+    </div>
+    <!--    The end of website Header-->
+</header>
+<div class="wrap">
+    <!--Section 1 hello-->
+    <section id="hello">
+        <div class="container">
+            <h1>
+                Hello world, my name is Artem, a long time Testing professional & Developer
+            </h1>
+            <p>I love to Write Query and Debug Code</p>
+        </div>
+    </section>
+</div>
+<!--Section 2 work-->
+<div class="wrap">
+    <section id="work">
+        <h1>this is my work</h1>
+        <h2>Mollis aliquam ut porttitor leo a diam. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit
+            sed</h2>
+        <!--Grid of Images of my Work-->
+        <div class="images">
+            <img src="https://dummyimage.com/400/3277b8/fff" alt="A dummy image to display"/>
+            <img src="https://dummyimage.com/400/3277b8/fff" alt="A dummy image to display"/> <br/>
+            <img src="https://dummyimage.com/400/3277b8/fff" alt="A dummy image to display"/>
+            <img src="https://dummyimage.com/400/3277b8/fff" alt="A dummy image to display"/> <br/>
+            <img src="https://dummyimage.com/400/3277b8/fff" alt="A dummy image to display"/>
+            <img src="https://dummyimage.com/400/3277b8/fff" alt="A dummy image to display"/>
+        </div>
+    </section>
+</div>
+
+<!--Section 3 about-me-->
+<div class="wrap">
+    <section id="about-me">
+        <h1>About me, Artem: Musician / Developer / Software Tester</h1>
+        <h2>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</h2>
+        <a href="#LINK TO YOUTUBE/SOUNDCLOUD/SPOTIFY INFO">
+            <img id="CenterThis" src="https://dummyimage.com/400/3277b8/fff" alt="A dummy image to display"/></a>
+        <ul>
+            <li><img src="https://img.icons8.com/doodle/48/000000/spotify.png"/></li>
+            <li><img src="https://img.icons8.com/color/48/000000/soundcloud.png"/></li>
+            <li><img src="https://img.icons8.com/fluent/48/000000/github.png"/></li>
+            <li><img src="https://img.icons8.com/officel/16/000000/linkedin.png"/></li>
+        </ul>
+    </section>
+</div>
+<!--Section 4 skills-->
+<div class="wrap">
+    <section id="skills">
+        <h1>My Skills</h1>
+        <h2>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</h2>
+        <div class="pattern" id="pattern">
+            <div class="col-group">
+                <div>
+                    <li class="colItem">
+                        <h3>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                            commodo
+                            consequat</h3>
+                    </li>
+                    <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lo</p>
+                </div>
+                <!---->
+                <div>
+                    <li class="colItem">
+                        <h3>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                            commodo
+                            consequat</h3>
+                    </li>
+                    <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lo</p>
+                </div>
+                <!---->
+                <div>
+                    <li class="colItem">
+                        <h3>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                            commodo
+                            consequat</h3>
+                    </li>
+                    <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lo</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</div>
+<!--website footer-->
+<footer class="footer">
+    <div class="container-sm">
+        <h1 class="FooterLogo">LOGO</h1>
+    </div>
+    <a class="AncorinFooter" href="#">Visit For More Information</a>
+    <p>2021 All Rights Reserved - © Artem.A</p>
+</footer>
+<!--HERE COMES MY SCRIPT-->
+<script>
+    $(document).ready(function (){
+        $('header a').click(function (){
+            var href = $(this).attr('href');
+            var id = href.split('#').join('');
+            $('body,html').animate({
+                'scrollTop' :$('#' + id).offset().top
+            });
+            return false;
+        });
+    });
+</script>
+</body>
+</html>
